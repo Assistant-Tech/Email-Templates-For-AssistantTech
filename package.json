@@ -1,0 +1,21 @@
+{
+  "name": "ejs-email-preview",
+  "version": "1.0.0",
+  "main": "render.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node render.js",
+    "dev": "nodemon render.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "open": "^10.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
