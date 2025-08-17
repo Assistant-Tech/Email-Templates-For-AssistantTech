@@ -1,0 +1,211 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Nunito Sans, Arial, sans-serif" />
+      <mj-text font-size="16px" line-height="1.6" color="#4a5568" />
+      <mj-section padding="0" />
+      <mj-button
+        background-color="#10b981"
+        color="#ffffff"
+        font-size="16px"
+        border-radius="8px"
+        padding="14px 32px"
+        font-weight="600"
+        letter-spacing="0.3px"
+      />
+    </mj-attributes>
+    <mj-font
+      name="Nunito Sans"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&display=swap"
+    />
+  </mj-head>
+
+  <mj-body background-color="#f5f7fa">
+    <mj-wrapper padding="20px">
+      <!-- Outer Card -->
+      <mj-section
+        background-color="#ffffff"
+        border-radius="14px"
+        padding="0"
+        border="1px solid #d1fae5"
+      >
+        <!-- Header Section -->
+        <mj-section
+          css-class="gradient-bg"
+          padding="40px 30px 30px"
+          border-bottom="1px solid #e2e8f0"
+        >
+          <mj-column>
+            <!-- Logo and Brand -->
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1751347733/Chatblix_Logo_xtkjmp.png"
+              alt="Chatblix Logo"
+              width="160px"
+              padding="0 0 15px 0"
+            />
+
+            <!-- Invitation Image -->
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1747963643/inv_u6myh1.png"
+              alt="Account Verification"
+              width="160px"
+              border-radius="8px"
+              padding="0 0 20px 0"
+            />
+
+            <!-- Header Title -->
+            <mj-text
+              align="center"
+              font-size="24px"
+              font-weight="600"
+              color="#1a202c"
+              letter-spacing="-0.3px"
+              padding="0"
+            >
+              Invitation from <%= senderName %>
+            </mj-text>
+          </mj-column>
+        </mj-section>
+
+        <!-- Main Content -->
+        <mj-section background-color="#ffffff" padding="40px 30px">
+          <mj-column>
+            <!-- Greeting -->
+            <mj-text padding="0 0 20px 0"> Hello <%= userName %>, </mj-text>
+
+            <!-- Invitation Message -->
+            <mj-text padding="0 0 20px 0">
+              <strong><%= senderName %> (<%= supportEmail %>)</strong> has
+              invited you to join ABC Company as a staff member on Chatblix.
+            </mj-text>
+
+            <!-- Accept Invitation Button -->
+            <mj-button
+              href="<%= link %>"
+              css-class="button-gradient"
+              align="center"
+              padding="0 0 20px 0"
+            >
+              Accept Invitation
+            </mj-button>
+
+            <!-- Link Display -->
+            <mj-text align="left" padding="0 0 20px 0">
+              <span>Link: </span>
+              <a
+                href="<%= link %>"
+                style="
+                  color: #10b981;
+                  font-weight: 600;
+                  font-size: 16px;
+                  letter-spacing: 0.3px;
+                  text-decoration: none;
+                "
+              >
+                https://www.example.com/verify?token=abc123xyz
+              </a>
+            </mj-text>
+
+            <!-- Support Information -->
+            <mj-text padding="0 0 20px 0">
+              For further inquiries or support, please email
+              <a
+                href="mailto:<%= supportEmail %>"
+                style="color: #10b981; text-decoration: underline"
+                ><%= supportEmail %></a
+              >
+              or contact us at
+              <a
+                href="tel:<%= supportPhone %>"
+                style="color: #10b981; text-decoration: underline"
+                ><%= supportPhone %></a
+              >.
+            </mj-text>
+
+            <!-- Signature -->
+            <mj-text padding="30px 0 0 0"> Best Regards, </mj-text>
+            <mj-text font-weight="600" color="#1a202c" padding="5px 0 0 0">
+              Chatblix Team
+            </mj-text>
+          </mj-column>
+        </mj-section>
+
+        <!-- Footer -->
+        <mj-section
+          css-class="footer-gradient"
+          padding="30px"
+          border-top="1px solid #e2e8f0"
+        >
+          <mj-column>
+            <!-- Company Logo and Brand -->
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1751347733/Chatblix_Logo_xtkjmp.png"
+              alt="Chatblix Logo"
+              width="150px"
+              padding="0 0 12px 0"
+            />
+
+            <!-- Tagline -->
+            <mj-text
+              align="center"
+              font-size="14px"
+              color="#718096"
+              font-weight="600"
+              padding="0 0 20px 0"
+            >
+              "Let's Make Customer Conversations Simple"
+            </mj-text>
+
+            <!-- Play Store Button -->
+            <mj-image
+              src="./assets/play.svg"
+              alt="Get it on Google Play"
+              width="140px"
+              border-radius="6px"
+              padding="6px 4px 20px 4px"
+            />
+
+            <!-- Copyright Information -->
+            <mj-text
+              align="center"
+              font-size="13px"
+              color="#718096"
+              line-height="1.5"
+              padding="0 0 8px 0"
+            >
+              © 2025 Chatblix. All Rights Reserved. 123 Main Street, Anytown
+            </mj-text>
+
+            <mj-text
+              align="center"
+              font-size="13px"
+              color="#718096"
+              line-height="1.5"
+              padding="0 0 8px 0"
+            >
+              You are receiving this email because you signed up with
+              <a
+                href="https://chatblix.com"
+                style="color: #10b981; text-decoration: underline"
+                >chatblix.com</a
+              >
+            </mj-text>
+
+            <mj-text
+              align="center"
+              font-size="13px"
+              color="#718096"
+              line-height="1.5"
+              padding="0"
+            >
+              Update how often you receive these emails
+              <a href="#" style="color: #10b981; text-decoration: underline"
+                >here</a
+              >.
+            </mj-text>
+          </mj-column>
+        </mj-section>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>

@@ -1,0 +1,146 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Nunito Sans, sans-serif" color="#333333" />
+      <mj-text font-size="16px" line-height="1.6" />
+      <mj-section padding="0" />
+    </mj-attributes>
+    <mj-font
+      name="Nunito Sans"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+    />
+  </mj-head>
+
+  <mj-body background-color="#e6f5f0">
+    <!-- Soft green tint background -->
+    <mj-wrapper padding="30px">
+      <!-- Outer Card -->
+      <mj-section
+        background-color="#ffffff"
+        border-radius="14px"
+        padding="0"
+        border="1px solid #d1fae5"
+        css-class="shadow"
+      >
+        <!-- Header -->
+        <mj-section
+          background-color="#f0fdf9"
+          border-bottom="1px solid #d1fae5"
+          padding-top="40px"
+          padding-bottom="30px"
+        >
+          <mj-column>
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1751347711/Chatblix_dqy4ls.svg"
+              alt="Chatblix Logo"
+              width="160px"
+            />
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1747963643/inv_u6myh1.png"
+              alt="Account Verification"
+              width="160px"
+              border-radius="8px"
+              padding-top="25px"
+            />
+            <mj-text
+              font-size="24px"
+              font-weight="600"
+              align="center"
+              color="#1a202c"
+            >
+              Account Verification
+            </mj-text>
+          </mj-column>
+        </mj-section>
+
+        <!-- Main Content -->
+        <mj-section background-color="#ffffff" padding="40px 30px">
+          <mj-column>
+            <mj-text>Dear <%= userName %>,</mj-text>
+            <mj-text>
+              Welcome to <strong style="color: #3b424e">Chatblix</strong>. We
+              are so happy to see you here. Thank you for trusting us to be a
+              part of your incredible journey.
+            </mj-text>
+            <mj-text>
+              To finish setting up your account, please verify your email
+              address by clicking on the button below:
+            </mj-text>
+            <mj-button
+              href="<%= link %>"
+              background="linear-gradient(135deg, #10b981 0%, #059669 100%)"
+              color="#ffffff"
+              font-weight="600"
+              font-size="16px"
+              border-radius="8px"
+              padding="30px 0"
+            >
+              Verify My Account
+            </mj-button>
+            <mj-text padding-top="10px">
+              Link:
+              <a href="<%= link %>" style="color: #10b981; font-weight: 600"
+                >https://www.resetpassword.com/</a
+              >
+            </mj-text>
+            <mj-text
+              >Once you have successfully verified your account, you will be
+              able to login to your account.</mj-text
+            >
+            <mj-text>We look forward to seeing you!</mj-text>
+            <mj-text>
+              For further inquiries or support, please email
+              <a href="mailto:<%= supportEmail %>" style="color: #10b981"
+                ><%= supportEmail %></a
+              >
+              or contact us at
+              <a href="tel:<%= supportPhone %>" style="color: #10b981"
+                ><%= supportPhone %></a
+              >.
+            </mj-text>
+            <mj-text>Best Regards,</mj-text>
+            <mj-text font-weight="600" color="#1a202c">Chatblix Team</mj-text>
+          </mj-column>
+        </mj-section>
+
+        <!-- Footer -->
+        <mj-section
+          background-color="#f9fafb"
+          border-top="1px solid #e5e7eb"
+          padding="30px"
+        >
+          <mj-column>
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1751347711/Chatblix_dqy4ls.svg"
+              alt="Chatblix Logo"
+              width="160px"
+            />
+            <mj-text font-size="18px" color="#718096"
+              >"Let's Make Customer Conversations Simple"</mj-text
+            >
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1747963808/play_mv0anm.png"
+              alt="Get it on Google Play"
+              width="140px"
+              border-radius="6px"
+              padding="6px 0"
+            />
+            <mj-text font-size="13px" color="#718096">
+              © 2025 Chatblix. All Rights Reserved. 123 Main Street, Anytown
+            </mj-text>
+            <mj-text font-size="13px" color="#718096">
+              You are receiving this email because you signed up with
+              <a href="https://chatblix.com" style="color: #10b981"
+                >chatblix.com</a
+              >
+            </mj-text>
+            <mj-text font-size="13px" color="#718096">
+              Update how often you receive these emails
+              <a href="#" style="color: #10b981">here</a>.
+            </mj-text>
+          </mj-column>
+        </mj-section>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
