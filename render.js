@@ -25,7 +25,12 @@ const sampleData = {
 };
 
 // Step 3: Read MJML file
-const templatePath = path.join(__dirname, "views", `${templateName}.mjml`);
+const templatePath = path.join(
+  __dirname,
+  "views",
+  "mjml",
+  `${templateName}.mjml`,
+);
 let mjmlContent = fs.readFileSync(templatePath, "utf8");
 
 // Step 4: Replace variables (simple EJS-style)

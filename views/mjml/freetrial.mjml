@@ -1,0 +1,181 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Nunito Sans, Arial, sans-serif" />
+      <mj-text font-size="16px" line-height="1.6" color="#4a5568" />
+      <mj-section padding="0" />
+      <mj-button
+        background-color="#10b981"
+        color="#ffffff"
+        font-size="16px"
+        border-radius="8px"
+        padding="14px 32px"
+        font-weight="600"
+        letter-spacing="0.3px"
+      />
+    </mj-attributes>
+    <mj-font
+      name="Nunito Sans"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&display=swap"
+    />
+  </mj-head>
+
+  <mj-body background-color="#f5f7fa">
+    <mj-wrapper padding="20px">
+      <!-- Outer Card -->
+      <mj-section
+        background-color="#ffffff"
+        border-radius="14px"
+        padding="0"
+        border="1px solid #d1fae5"
+      >
+        <!-- Header -->
+        <mj-section
+          background-color="#f0fdf9"
+          border-bottom="1px solid #d1fae5"
+          padding-top="30px"
+          padding-bottom="20px"
+        >
+          <mj-column>
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1751347711/Chatblix_dqy4ls.svg"
+              alt="Chatblix Logo"
+              width="160px"
+            />
+          </mj-column>
+        </mj-section>
+
+        <!-- Main Content -->
+        <mj-section background-color="#ffffff" padding="40px 30px">
+          <mj-column>
+            <!-- Free Trial Icon -->
+            <mj-image
+              width="160px"
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1755442308/trial_us8tqa.png"
+              alt="Free Trial"
+            />
+
+            <!-- Heading -->
+            <mj-text
+              align="center"
+              font-size="20px"
+              font-weight="700"
+              color="#111827"
+              padding="20px 0 10px 0"
+            >
+              Welcome to Your Free Trial
+            </mj-text>
+
+            <!-- Greeting -->
+            <mj-text align="left" padding="0 0 20px 0">
+              Dear <%= userName %>,
+            </mj-text>
+
+            <!-- Welcome Message -->
+            <mj-text align="left" padding="0 0 20px 0">
+              Welcome to your Chatblix
+              <strong style="color: #3b424e">14-days free trial</strong>. Enjoy
+              your free trial.
+            </mj-text>
+
+            <!-- Continue Message -->
+            <mj-text align="left" padding="0 0 30px 0">
+              To continue using all the features Chatblix provides after your
+              trial ends, choose a subscription plan that suits your company the
+              best. Please click on the link below to discover our plans.
+            </mj-text>
+
+            <!-- View Plans Button -->
+            <mj-button href="<%= link %>" align="center">
+              View Plans
+            </mj-button>
+
+            <!-- Additional Info -->
+            <mj-text align="left" padding="20px 0">
+              Once you have successfully verified your account, you will be able
+              to login to account.
+            </mj-text>
+
+            <mj-text align="left" padding="0 0 20px 0">
+              We look forward to seeing you!
+            </mj-text>
+
+            <!-- Support Information -->
+            <mj-text align="left" padding="0 0 20px 0">
+              For further inquiries or support, please email
+              <a
+                href="mailto:<%= supportEmail %>"
+                style="color: #10b981; text-decoration: underline"
+                ><%= supportEmail %></a
+              >
+              or contact us at
+              <a
+                href="tel:<%= supportPhone %>"
+                style="color: #10b981; text-decoration: underline"
+                ><%= supportPhone %></a
+              >.
+            </mj-text>
+
+            <!-- Signature -->
+            <mj-text align="left" padding="30px 0 0 0"> Best Regards, </mj-text>
+            <mj-text
+              align="left"
+              font-weight="600"
+              color="#1a202c"
+              padding="5px 0 0 0"
+            >
+              Chatblix Team
+            </mj-text>
+          </mj-column>
+        </mj-section>
+
+        <!-- Footer -->
+        <mj-section
+          background-color="#f0fdf9"
+          border-top="1px solid #d1fae5"
+          padding="30px"
+        >
+          <mj-column>
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1751347711/Chatblix_dqy4ls.svg"
+              alt="Chatblix Logo"
+              width="160px"
+            />
+            <mj-text
+              font-size="14px"
+              color="#718096"
+              align="center"
+              padding="10px 0"
+            >
+              "Let's Make Customer Conversations Simple"
+            </mj-text>
+
+            <!-- Play Store Button -->
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1747963808/play_mv0anm.png"
+              alt="Get it on Google Play"
+              width="140px"
+              border-radius="6px"
+              padding="10px 0"
+            />
+
+            <!-- Copyright -->
+            <mj-text font-size="13px" color="#718096">
+              © 2025 Chatblix. All Rights Reserved. 123 Main Street, Anytown
+            </mj-text>
+            <mj-text font-size="13px" color="#718096">
+              You are receiving this email because you signed up with
+              <a href="https://chatblix.com" style="color: #10b981"
+                >chatblix.com</a
+              >
+            </mj-text>
+            <mj-text font-size="13px" color="#718096">
+              Update how often you receive these emails
+              <a href="#" style="color: #10b981">here</a>.
+            </mj-text>
+          </mj-column>
+        </mj-section>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
