@@ -1,9 +1,16 @@
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-all font-family="Nunito Sans, sans-serif" color="#333333" />
-      <mj-text font-size="16px" line-height="1.6" />
+      <mj-all font-family="Nunito Sans, Arial, sans-serif" />
+      <mj-text font-size="16px" line-height="1.6" color="#333333" />
       <mj-section padding="0" />
+      <mj-button
+        background-color="#10b981"
+        color="#ffffff"
+        font-size="16px"
+        border-radius="6px"
+        padding="15px 30px"
+      />
     </mj-attributes>
     <mj-font
       name="Nunito Sans"
@@ -11,7 +18,7 @@
     />
   </mj-head>
 
-  <mj-body background-color="#e6f5f0">
+  <mj-body background-color="#ffff">
     <!-- Soft green tint background -->
     <mj-wrapper padding="30px">
       <!-- Outer Card -->
@@ -105,8 +112,8 @@
 
         <!-- Footer -->
         <mj-section
-          background-color="#f9fafb"
-          border-top="1px solid #e5e7eb"
+          background-color="#f0fdf9"
+          border-top="1px solid #d1fae5"
           padding="30px"
         >
           <mj-column>
@@ -115,16 +122,25 @@
               alt="Chatblix Logo"
               width="160px"
             />
-            <mj-text font-size="18px" color="#718096"
-              >"Let's Make Customer Conversations Simple"</mj-text
+            <mj-text
+              font-size="14px"
+              color="#718096"
+              align="center"
+              padding="10px 0"
             >
+              "Let's Make Customer Conversations Simple"
+            </mj-text>
+
+            <!-- Play Store Button -->
             <mj-image
               src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1747963808/play_mv0anm.png"
               alt="Get it on Google Play"
               width="140px"
               border-radius="6px"
-              padding="6px 0"
+              padding="10px 0"
             />
+
+            <!-- Copyright -->
             <mj-text font-size="13px" color="#718096">
               © 2025 Chatblix. All Rights Reserved. 123 Main Street, Anytown
             </mj-text>
@@ -140,7 +156,6 @@
             </mj-text>
           </mj-column>
         </mj-section>
-      </mj-section>
     </mj-wrapper>
   </mj-body>
 </mjml>

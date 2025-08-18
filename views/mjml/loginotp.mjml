@@ -21,7 +21,7 @@
   <!-- Background with watermark -->
   <mj-body
     background-color="#f3f4f6"
-    background-url="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1747963643/reset_npzbmz.png"
+    background-url="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1755492312/cone_iyuviv.png"
     background-repeat="no-repeat"
     background-position="center center"
     background-size="200px"
@@ -50,35 +50,66 @@
           </mj-column>
         </mj-section>
 
-        <mj-section padding="40px 30px">
+        <!-- Main Content -->
+        <mj-section background-color="#ffffff" padding="40px 30px">
           <mj-column>
-            <!-- BIG IMAGE ABOVE WELCOME -->
+            <!-- Illustration -->
             <mj-image
-              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1755493982/undraw_warning_tl76_vbl1k0.png"
-              alt="Onboarding Illustration"
-              width="200px"
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1755495729/undraw_fingerprint_kdwq_l5axfx.png"
+              alt="OTP Illustration"
+              width="180px"
               padding="20px 0"
             />
+
+            <!-- Heading -->
             <mj-text
-              align="center"
+              font-size="22px"
               font-weight="700"
-              font-size="20px"
-              color="#dc2626"
+              align="center"
+              color="#10b981"
+              padding-bottom="10px"
             >
-              Payment Failed
+              Login Verification Code
             </mj-text>
+
+            <!-- Message -->
             <mj-text color="#4a5568">
-              Hi <%= userName %>,<br /><br />
-              Unfortunately, your recent payment attempt for the
-              <strong><%= planName %></strong> plan did not go through.
+              Hi <strong><%= userName %></strong>, <br /><br />
+              Use the following One-Time Password (OTP) to complete your login:
             </mj-text>
-            <mj-text color="#4a5568">
-              Please update your payment details to continue enjoying
-              uninterrupted services.
-            </mj-text>
-            <mj-button href="<%= billingLink %>" align="center"
-              >Update Payment</mj-button
+
+            <!-- OTP Code -->
+            <mj-text
+              font-size="32px"
+              font-weight="700"
+              align="center"
+              color="#1a202c"
+              padding="20px 0"
             >
+              <%= otpCode %>
+            </mj-text>
+
+            <!-- Expiry Info -->
+            <mj-text color="#4a5568" align="center">
+              This code will expire in <strong>10 minutes</strong>. If you
+              didn’t request this, please ignore this email.
+            </mj-text>
+
+            <!-- Support -->
+            <mj-text color="#4a5568" padding-top="20px">
+              For assistance, contact us at
+              <a
+                href="mailto:<%= supportEmail %>"
+                style="color: #10b981; text-decoration: underline"
+                ><%= supportEmail %></a
+              >.
+            </mj-text>
+
+            <!-- Regards -->
+            <mj-text color="#4a5568" padding-top="20px">Best Regards,</mj-text>
+            <mj-text align="left" color="#1a202c" font-weight="600" padding="0">
+              Chatblix Team
+            </mj-text>
           </mj-column>
         </mj-section>
 
@@ -103,7 +134,7 @@
               "Let's Make Customer Conversations Simple"
             </mj-text>
 
-            <!-- Play Store Button -->
+            <!-- Play Store -->
             <mj-image
               src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1747963808/play_mv0anm.png"
               alt="Get it on Google Play"
