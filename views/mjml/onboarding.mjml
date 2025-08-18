@@ -21,7 +21,7 @@
   <!-- Background with watermark -->
   <mj-body
     background-color="#f3f4f6"
-    background-url="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1747963643/reset_npzbmz.png"
+    background-url="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1755492312/cone_iyuviv.png"
     background-repeat="no-repeat"
     background-position="center center"
     background-size="200px"
@@ -53,14 +53,29 @@
         <!-- Main Content -->
         <mj-section background-color="#ffffff" padding="40px 30px">
           <mj-column>
+            <!-- BIG IMAGE ABOVE WELCOME -->
+            <mj-image
+              src="https://res.cloudinary.com/dtoqwn0gx/image/upload/v1755492533/cone-removebg-preview_rwrk3t.png"
+              alt="Onboarding Illustration"
+              width="200px"
+              padding="20px 0"
+            />
+            <mj-text
+              color="#4a5568"
+              font-size="24px"
+              font-weight="700"
+              align="center"
+              color="#10b981"
+            >
+              Onboarding Process Compeleted</mj-text
+            >
             <!-- Greeting -->
-            <mj-text color="#4a5568"> Dear <%= userName %>, </mj-text>
 
             <!-- Message -->
             <mj-text color="#4a5568">
-              Welcome to <strong>Chatblix</strong>. You have successfully
-              completed the onboarding process and are now a staff member of
-              <strong>ABC Company</strong>.
+              Welcome to <strong>Chatblix</strong>, <%= userName %>! You have
+              successfully completed the onboarding process and are now a staff
+              member of <strong>ABC Company</strong>.
             </mj-text>
 
             <!-- Support Info -->
@@ -83,12 +98,7 @@
             <mj-text color="#4a5568" padding-top="20px">
               Best Regards,
             </mj-text>
-            <mj-text
-              align="center"
-              color="#1a202c"
-              font-weight="600"
-              padding="0"
-            >
+            <mj-text align="left" color="#1a202c" font-weight="600" padding="0">
               Chatblix Team
             </mj-text>
           </mj-column>
